@@ -13,7 +13,7 @@ package model
 type SplitChannelPackageData struct {
 	PackageId           *int64                `json:"package_id,omitempty"`
 	ChannelName         *string               `json:"channel_name,omitempty"`
-	ChannelPackageId    *string               `json:"channel_package_id,omitempty"`
+	ChannelPackageId    *int64                `json:"channel_package_id,omitempty"`
 	ChannelId           *string               `json:"channel_id,omitempty"`
 	SystemStatus        UnionPackageSysStatus `json:"system_status,omitempty"`
 	CreatedTime         *int64                `json:"created_time,omitempty"`
