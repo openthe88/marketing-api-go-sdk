@@ -12,6 +12,6 @@ package model
 // 应用分包操作结果
 type ResultDataStruct struct {
 	ChannelName      *string `json:"channel_name,omitempty"`
-	ChannelPackageId *string `json:"channel_package_id,omitempty"`
+	ChannelPackageId *int64  `json:"channel_package_id,omitempty"`
 	Message          *string `json:"message,omitempty"`
 }
