@@ -14,7 +14,7 @@ type AdLabelGetListStruct struct {
 	LabelCategory *string            `json:"label_category,omitempty"`
 	Label         *[]string          `json:"label,omitempty"`
 	Icon          *[]LabelIconItem   `json:"icon,omitempty"`
-	LabelType     LabelType          `json:"label_type,omitempty"`
+	LabelType     *int64             `json:"label_type,omitempty"`
 	LabelTypeName *string            `json:"label_type_name,omitempty"`
 	LabelRemark   *[]LabelRemarkItem `json:"label_remark,omitempty"`
 	LabelStructs  *[]LabelStruct     `json:"label_structs,omitempty"`
