@@ -45,6 +45,8 @@ const (
 	SiteSetDefinition_MOBILE_UNION_DELETED       SiteSetDefinition = "SITE_SET_MOBILE_UNION_DELETED"
 	SiteSetDefinition_THIRDPARTY                 SiteSetDefinition = "SITE_SET_THIRDPARTY"
 	SiteSetDefinition_JD_WAICAI                  SiteSetDefinition = "SITE_SET_JD_WAICAI"
+	SiteSetDefinition_TENCENT_AMS                SiteSetDefinition = "SITE_SET_TENCENT_AMS"
+	SiteSetDefinition_OVERSEAS                   SiteSetDefinition = "SITE_SET_OVERSEAS"
 	SiteSetDefinition_PCQQ                       SiteSetDefinition = "SITE_SET_PCQQ"
 	SiteSetDefinition_KANDIAN                    SiteSetDefinition = "SITE_SET_KANDIAN"
 	SiteSetDefinition_QQ_MUSIC_GAME              SiteSetDefinition = "SITE_SET_QQ_MUSIC_GAME"
@@ -67,4 +69,5 @@ const (
 	SiteSetDefinition_CHANNELS_CONTENT_PROMOTION SiteSetDefinition = "SITE_SET_CHANNELS_CONTENT_PROMOTION"
 	SiteSetDefinition_FREETRADE_WEAPP            SiteSetDefinition = "SITE_SET_FREETRADE_WEAPP"
 	SiteSetDefinition_TENCENT_AD_NETWORK_OVERSEA SiteSetDefinition = "SITE_SET_TENCENT_AD_NETWORK_OVERSEA"
+	SiteSetDefinition_YUNXUAN                    SiteSetDefinition = "SITE_SET_YUNXUAN"
 )

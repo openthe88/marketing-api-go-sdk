@@ -130,9 +130,6 @@ type DailyReportApiListStruct struct {
 	GuideToFollowPageViewers                   *int64   `json:"guide_to_follow_page_viewers,omitempty"`
 	GuideToFollowPageInteractionAmount         *int64   `json:"guide_to_follow_page_interaction_amount,omitempty"`
 	GuideToFollowPageInteractionUsers          *int64   `json:"guide_to_follow_page_interaction_users,omitempty"`
-	LandingPageViewCount                       *int64   `json:"landing_page_view_count,omitempty"`
-	LandingPageEffectiveRate                   *float64 `json:"landing_page_effective_rate,omitempty"`
-	LandingPageUserCount                       *int64   `json:"landing_page_user_count,omitempty"`
 	PlatformKeyPageViewUserCount               *int64   `json:"platform_key_page_view_user_count,omitempty"`
 	PageConsultCount                           *int64   `json:"page_consult_count,omitempty"`
 	ConsultUvCount                             *int64   `json:"consult_uv_count,omitempty"`
@@ -706,16 +703,76 @@ type DailyReportApiListStruct struct {
 	AfterAddWecomNegativePv                    *int64   `json:"after_add_wecom_negative_pv,omitempty"`
 	SecurityLowPriceOrderPv                    *int64   `json:"security_low_price_order_pv,omitempty"`
 	SecurityHighPriceOrderPv                   *int64   `json:"security_high_price_order_pv,omitempty"`
+	MiniGameRate                               *float64 `json:"mini_game_rate,omitempty"`
+	RetentionPlaDedupPv                        *int64   `json:"retention_pla_dedup_pv,omitempty"`
+	RetentionPlaDedupRate                      *float64 `json:"retention_pla_dedup_rate,omitempty"`
+	AdMonetizationPlaDedupPv                   *int64   `json:"ad_monetization_pla_dedup_pv,omitempty"`
+	AdMonetizationPlaDedupActive1dPv           *int64   `json:"ad_monetization_pla_dedup_active_1d_pv,omitempty"`
+	AdMonetizationPlaDedupActive3dPv           *int64   `json:"ad_monetization_pla_dedup_active_3d_pv,omitempty"`
+	AdMonetizationPlaDedupActive7dPv           *int64   `json:"ad_monetization_pla_dedup_active_7d_pv,omitempty"`
+	AdMonetizationBkPlaDedupPv                 *int64   `json:"ad_monetization_bk_pla_dedup_pv,omitempty"`
+	MiniGameBfIncomePlaRoi                     *float64 `json:"mini_game_bf_income_pla_roi,omitempty"`
+	MiniGameBfIncomePlaArpu                    *int64   `json:"mini_game_bf_income_pla_arpu,omitempty"`
+	AdMonetizationBkPlaCost                    *int64   `json:"ad_monetization_bk_pla_cost,omitempty"`
+	AdMonetizationBkPlaDedupActive1dPv         *int64   `json:"ad_monetization_bk_pla_dedup_active_1d_pv,omitempty"`
+	AdMonetizationBkPlaActive24hAmount         *int64   `json:"ad_monetization_bk_pla_active_24h_amount,omitempty"`
+	AdMonetizationBkPlaDedupActive24hPv        *int64   `json:"ad_monetization_bk_pla_dedup_active_24h_pv,omitempty"`
+	AdMonetizationBkPlaDedupActive24hRoi       *float64 `json:"ad_monetization_bk_pla_dedup_active_24h_roi,omitempty"`
+	AdMonetizationBkPlaDedupActive24hArpu      *int64   `json:"ad_monetization_bk_pla_dedup_active_24h_arpu,omitempty"`
+	AdMonetizationBkPlaDedupActive24hCost      *int64   `json:"ad_monetization_bk_pla_dedup_active_24h_cost,omitempty"`
+	AdMonetizationBkPlaActive3dAmount          *int64   `json:"ad_monetization_bk_pla_active_3d_amount,omitempty"`
+	AdMonetizationBkPlaActive3dRoi             *float64 `json:"ad_monetization_bk_pla_active_3d_roi,omitempty"`
+	AdMonetizationBkPlaActive7dAmount          *int64   `json:"ad_monetization_bk_pla_active_7d_amount,omitempty"`
+	AdMonetizationBkPlaActive14dAmount         *int64   `json:"ad_monetization_bk_pla_active_14d_amount,omitempty"`
+	AdMonetizationBkPlaActive7dRoi             *float64 `json:"ad_monetization_bk_pla_active_7d_roi,omitempty"`
+	AdMonetizationBkPlaActive14dRoi            *float64 `json:"ad_monetization_bk_pla_active_14d_roi,omitempty"`
+	ClkAppservicePv                            *int64   `json:"clk_appservice_pv,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`
 	DynamicCreativeName                        *string  `json:"dynamic_creative_name,omitempty"`
 	ComponentId                                *int64   `json:"component_id,omitempty"`
 	SiteSet                                    *string  `json:"site_set,omitempty"`
-	ComponentName                              *string  `json:"component_name,omitempty"`
 	ComponentType                              *string  `json:"component_type,omitempty"`
 	ImageIds                                   *string  `json:"image_ids,omitempty"`
 	VideoIds                                   *string  `json:"video_ids,omitempty"`
+	ExpAvgRank                                 *float64 `json:"exp_avg_rank,omitempty"`
+	ExpOverallTopPv                            *int64   `json:"exp_overall_top_pv,omitempty"`
+	ClkTopPv                                   *int64   `json:"clk_top_pv,omitempty"`
+	CvsExpPv                                   *int64   `json:"cvs_exp_pv,omitempty"`
+	CvsExpUv                                   *int64   `json:"cvs_exp_uv,omitempty"`
+	CvsCpnClkPv                                *int64   `json:"cvs_cpn_clk_pv,omitempty"`
+	CvsCpnClkUv                                *int64   `json:"cvs_cpn_clk_uv,omitempty"`
+	CvsCpnExpPv                                *int64   `json:"cvs_cpn_exp_pv,omitempty"`
+	CvsCpnExpUv                                *int64   `json:"cvs_cpn_exp_uv,omitempty"`
+	CvsCpnExpDuration                          *float64 `json:"cvs_cpn_exp_duration,omitempty"`
+	CvsCpnBtnClkPv                             *int64   `json:"cvs_cpn_btn_clk_pv,omitempty"`
+	CvsCpnBtnClkUv                             *int64   `json:"cvs_cpn_btn_clk_uv,omitempty"`
+	CvsCpnClkDedupPv                           *int64   `json:"cvs_cpn_clk_dedup_pv,omitempty"`
+	CvsCpnVideoPlayPv                          *int64   `json:"cvs_cpn_video_play_pv,omitempty"`
+	CvsCpnVideoPlayUv                          *int64   `json:"cvs_cpn_video_play_uv,omitempty"`
+	CvsCpnVideoPlayDuration                    *float64 `json:"cvs_cpn_video_play_duration,omitempty"`
+	CvsCpnVideoPlayHalfUv                      *int64   `json:"cvs_cpn_video_play_half_uv,omitempty"`
+	CvsCpnVideoPlayFinUv                       *int64   `json:"cvs_cpn_video_play_fin_uv,omitempty"`
+	CvsCpnMediaPlayPv                          *int64   `json:"cvs_cpn_media_play_pv,omitempty"`
+	CvsCpnMediaPlayUv                          *int64   `json:"cvs_cpn_media_play_uv,omitempty"`
+	CvsCpnMediaPlayDuration                    *float64 `json:"cvs_cpn_media_play_duration,omitempty"`
+	CvsCpnMediaPlayHalfUv                      *int64   `json:"cvs_cpn_media_play_half_uv,omitempty"`
+	CvsCpnMediaPlayFinUv                       *int64   `json:"cvs_cpn_media_play_fin_uv,omitempty"`
+	AvgCvsViewtime                             *float64 `json:"avg_cvs_viewtime,omitempty"`
+	AvgCpnexpViewtime                          *float64 `json:"avg_cpnexp_viewtime,omitempty"`
+	AvgCpnplayVideoTime                        *float64 `json:"avg_cpnplay_video_time,omitempty"`
+	AvgCpnplayMediaTime                        *float64 `json:"avg_cpnplay_media_time,omitempty"`
+	CpnclkButtonPvRate                         *float64 `json:"cpnclk_button_pv_rate,omitempty"`
+	CpnplayVideoAndMediaPv                     *int64   `json:"cpnplay_video_and_media_pv,omitempty"`
+	CpnplayVideoAndMediaUv                     *int64   `json:"cpnplay_video_and_media_uv,omitempty"`
+	CpnplayVideoAndMediaFinUv                  *int64   `json:"cpnplay_video_and_media_fin_uv,omitempty"`
+	CpnplayVideoAndMediaTime                   *float64 `json:"cpnplay_video_and_media_time,omitempty"`
+	AvgCpnplayVideoAndMediaTime                *float64 `json:"avg_cpnplay_video_and_media_time,omitempty"`
+	CanvasHbSingleReceiveExpPv                 *int64   `json:"canvas_hb_single_receive_exp_pv,omitempty"`
+	CanvasHbSingleSendExpPv                    *int64   `json:"canvas_hb_single_send_exp_pv,omitempty"`
+	CanvasHbDoubleReceiveExpPv                 *int64   `json:"canvas_hb_double_receive_exp_pv,omitempty"`
+	CanvasHbDoubleSendExpPv                    *int64   `json:"canvas_hb_double_send_exp_pv,omitempty"`
 	Hour                                       *int64   `json:"hour,omitempty"`
 	ChannelId                                  *string  `json:"channel_id,omitempty"`
 	BuyingType                                 *string  `json:"buying_type,omitempty"`
@@ -723,12 +780,12 @@ type DailyReportApiListStruct struct {
 	Bidword                                    *string  `json:"bidword,omitempty"`
 	MatchType                                  *int64   `json:"match_type,omitempty"`
 	Device                                     *int64   `json:"device,omitempty"`
-	ExpAvgRank                                 *float64 `json:"exp_avg_rank,omitempty"`
-	ExpOverallTopPv                            *int64   `json:"exp_overall_top_pv,omitempty"`
-	ClkTopPv                                   *int64   `json:"clk_top_pv,omitempty"`
 	Queryword                                  *string  `json:"queryword,omitempty"`
 	ImageId                                    *string  `json:"image_id,omitempty"`
 	VideoId                                    *string  `json:"video_id,omitempty"`
+	MarketingTargetTypeId                      *int64   `json:"marketing_target_type_id,omitempty"`
+	MarketingAssetId                           *int64   `json:"marketing_asset_id,omitempty"`
+	MarketingAssetName                         *string  `json:"marketing_asset_name,omitempty"`
 	ProjectId                                  *int64   `json:"project_id,omitempty"`
 	ProjectName                                *string  `json:"project_name,omitempty"`
 }
