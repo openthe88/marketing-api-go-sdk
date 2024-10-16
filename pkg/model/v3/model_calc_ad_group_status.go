@@ -22,7 +22,12 @@ const (
 	CalcAdGroupStatus_ACCOUNT_BALANCE_NOT_ENOUGH CalcAdGroupStatus = "ADGROUP_STATUS_ACCOUNT_BALANCE_NOT_ENOUGH"
 	CalcAdGroupStatus_DAILY_BUDGET_REACHED       CalcAdGroupStatus = "ADGROUP_STATUS_DAILY_BUDGET_REACHED"
 	CalcAdGroupStatus_PARTIAL_ACTIVE             CalcAdGroupStatus = "ADGROUP_STATUS_PARTIAL_ACTIVE"
+	CalcAdGroupStatus_WECHAT_CHANNELS_STOP       CalcAdGroupStatus = "ADGROUP_STATUS_WECHAT_CHANNELS_STOP"
 	CalcAdGroupStatus_CREATIVE_STATUS_PENDING    CalcAdGroupStatus = "ADGROUP_STATUS_CREATIVE_STATUS_PENDING"
 	CalcAdGroupStatus_CREATIVE_EMPTY             CalcAdGroupStatus = "ADGROUP_STATUS_CREATIVE_EMPTY"
 	CalcAdGroupStatus_JOINT_BUDGET_REACHED       CalcAdGroupStatus = "ADGROUP_STATUS_JOINT_BUDGET_REACHED"
+	CalcAdGroupStatus_TOTAL_BUDGET_REACHED       CalcAdGroupStatus = "ADGROUP_STATUS_TOTAL_BUDGET_REACHED"
+	CalcAdGroupStatus_PRE_LOCK                   CalcAdGroupStatus = "ADGROUP_STATUS_PRE_LOCK"
+	CalcAdGroupStatus_UNLOCKING                  CalcAdGroupStatus = "ADGROUP_STATUS_UNLOCKING"
+	CalcAdGroupStatus_STOP                       CalcAdGroupStatus = "ADGROUP_STATUS_STOP"
 )
