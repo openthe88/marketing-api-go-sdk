@@ -11,10 +11,14 @@ package model
 
 // 动态详情
 type FinderObject struct {
-	ExportId       *string     `json:"export_id,omitempty"`
-	CreateTime     *int64      `json:"create_time,omitempty"`
-	DeleteFlag     *int64      `json:"delete_flag,omitempty"`
-	Description    *string     `json:"description,omitempty"`
-	Medias         *[]MediaNew `json:"medias,omitempty"`
-	FinderUsername *string     `json:"finder_username,omitempty"`
+	ExportId                *string                `json:"export_id,omitempty"`
+	CreateTime              *int64                 `json:"create_time,omitempty"`
+	DeleteFlag              *int64                 `json:"delete_flag,omitempty"`
+	Description             *string                `json:"description,omitempty"`
+	Medias                  *[]WechatChannelsMedia `json:"medias,omitempty"`
+	FinderUsername          *string                `json:"finder_username,omitempty"`
+	WechatChannelsAccountId *string                `json:"wechat_channels_account_id,omitempty"`
+	IsDisable               *bool                  `json:"is_disable,omitempty"`
+	DisableMessage          *string                `json:"disable_message,omitempty"`
+	AuditStatus             AdStatus               `json:"audit_status,omitempty"`
 }

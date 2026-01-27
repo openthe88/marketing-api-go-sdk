@@ -24,11 +24,8 @@ type HourlyReportApiListStruct struct {
 	ValuableClickCost                          *int64   `json:"valuable_click_cost,omitempty"`
 	ValuableClickRate                          *float64 `json:"valuable_click_rate,omitempty"`
 	Cost                                       *int64   `json:"cost,omitempty"`
-	WechatCostStage1                           *int64   `json:"wechat_cost_stage1,omitempty"`
-	WechatCostStage2                           *int64   `json:"wechat_cost_stage2,omitempty"`
 	AcquisitionCost                            *int64   `json:"acquisition_cost,omitempty"`
 	ThousandDisplayPrice                       *int64   `json:"thousand_display_price,omitempty"`
-	RealCostTop                                *int64   `json:"real_cost_top,omitempty"`
 	ConversionsCount                           *int64   `json:"conversions_count,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	ConversionsRate                            *float64 `json:"conversions_rate,omitempty"`
@@ -37,10 +34,6 @@ type HourlyReportApiListStruct struct {
 	DeepConversionsCount                       *int64   `json:"deep_conversions_count,omitempty"`
 	DeepConversionsRate                        *float64 `json:"deep_conversions_rate,omitempty"`
 	DeepConversionsCost                        *int64   `json:"deep_conversions_cost,omitempty"`
-	WechatShallowConversionsCountStage1        *int64   `json:"wechat_shallow_conversions_count_stage1,omitempty"`
-	WechatShallowConversionsCountStage2        *int64   `json:"wechat_shallow_conversions_count_stage2,omitempty"`
-	WechatDeepConversionsCountStage1           *int64   `json:"wechat_deep_conversions_count_stage1,omitempty"`
-	WechatDeepConversionsCountStage2           *int64   `json:"wechat_deep_conversions_count_stage2,omitempty"`
 	ConversionsByDisplayCount                  *int64   `json:"conversions_by_display_count,omitempty"`
 	ConversionsByDisplayRate                   *float64 `json:"conversions_by_display_rate,omitempty"`
 	ConversionsByDisplayCost                   *int64   `json:"conversions_by_display_cost,omitempty"`
@@ -67,7 +60,6 @@ type HourlyReportApiListStruct struct {
 	VideoOuterPlay3sRate                       *float64 `json:"video_outer_play3s_rate,omitempty"`
 	VideoOuterPlay5sCount                      *int64   `json:"video_outer_play5s_count,omitempty"`
 	VideoOuterPlay7sCount                      *int64   `json:"video_outer_play7s_count,omitempty"`
-	VideoInnerPlayCount                        *int64   `json:"video_inner_play_count,omitempty"`
 	ReadCount                                  *int64   `json:"read_count,omitempty"`
 	ReadCost                                   *int64   `json:"read_cost,omitempty"`
 	CommentCount                               *int64   `json:"comment_count,omitempty"`
@@ -170,17 +162,10 @@ type HourlyReportApiListStruct struct {
 	PagePhoneCallDirectCount                   *int64   `json:"page_phone_call_direct_count,omitempty"`
 	PagePhoneCallDirectRate                    *float64 `json:"page_phone_call_direct_rate,omitempty"`
 	PagePhoneCallDirectCost                    *int64   `json:"page_phone_call_direct_cost,omitempty"`
-	PagePhoneCallBackCount                     *int64   `json:"page_phone_call_back_count,omitempty"`
-	PagePhoneCallBackRate                      *float64 `json:"page_phone_call_back_rate,omitempty"`
-	PagePhoneCallBackCost                      *int64   `json:"page_phone_call_back_cost,omitempty"`
-	PhoneCallCount                             *int64   `json:"phone_call_count,omitempty"`
-	IntePhoneCount                             *int64   `json:"inte_phone_count,omitempty"`
-	PhoneCallUv                                *int64   `json:"phone_call_uv,omitempty"`
 	PotentialPhoneCount                        *int64   `json:"potential_phone_count,omitempty"`
 	PotentialCustomerPhoneUv                   *int64   `json:"potential_customer_phone_uv,omitempty"`
 	EffectivePhoneCount                        *int64   `json:"effective_phone_count,omitempty"`
 	ValidPhoneUv                               *int64   `json:"valid_phone_uv,omitempty"`
-	PhoneConsultCount                          *int64   `json:"phone_consult_count,omitempty"`
 	CouponUsageNumber                          *int64   `json:"coupon_usage_number,omitempty"`
 	CouponUsageRate                            *float64 `json:"coupon_usage_rate,omitempty"`
 	CouponUsageCost                            *int64   `json:"coupon_usage_cost,omitempty"`
@@ -269,8 +254,6 @@ type HourlyReportApiListStruct struct {
 	Order24hByClickCount                       *int64   `json:"order_24h_by_click_count,omitempty"`
 	Order24hByClickAmount                      *int64   `json:"order_24h_by_click_amount,omitempty"`
 	Order24hByClickRoi                         *float64 `json:"order_24h_by_click_roi,omitempty"`
-	LiveStreamOrderPv                          *int64   `json:"live_stream_order_pv,omitempty"`
-	LiveStreamOrderAmount                      *int64   `json:"live_stream_order_amount,omitempty"`
 	DeliverCount                               *int64   `json:"deliver_count,omitempty"`
 	DeliverRate                                *float64 `json:"deliver_rate,omitempty"`
 	DeliverCost                                *int64   `json:"deliver_cost,omitempty"`
@@ -302,7 +285,6 @@ type HourlyReportApiListStruct struct {
 	RegClkRate                                 *float64 `json:"reg_clk_rate,omitempty"`
 	ActivateRegisterRate                       *float64 `json:"activate_register_rate,omitempty"`
 	RegPlaPv                                   *int64   `json:"reg_pla_pv,omitempty"`
-	WebRegisterUv                              *int64   `json:"web_register_uv,omitempty"`
 	RegAllDedupPv                              *int64   `json:"reg_all_dedup_pv,omitempty"`
 	RegCostPla                                 *int64   `json:"reg_cost_pla,omitempty"`
 	RegClickRatePla                            *float64 `json:"reg_click_rate_pla,omitempty"`
@@ -393,26 +375,19 @@ type HourlyReportApiListStruct struct {
 	PaymentAmountActivatedD30                  *int64   `json:"payment_amount_activated_d30,omitempty"`
 	RoiActivatedD30                            *float64 `json:"roi_activated_d30,omitempty"`
 	MiniGamePayingArpu                         *int64   `json:"mini_game_paying_arpu,omitempty"`
-	Minigame24hPayAmount                       *int64   `json:"minigame_24h_pay_amount,omitempty"`
 	Minigame24hPayUv                           *int64   `json:"minigame_24h_pay_uv,omitempty"`
 	Minigame24hPayRoi                          *float64 `json:"minigame_24h_pay_roi,omitempty"`
 	Minigame24hPayArpu                         *int64   `json:"minigame_24h_pay_arpu,omitempty"`
-	Minigame1dPayCount                         *int64   `json:"minigame_1d_pay_count,omitempty"`
-	MiniGamePayingUsersD1                      *int64   `json:"mini_game_paying_users_d1,omitempty"`
-	MiniGamePayingAmountD1                     *int64   `json:"mini_game_paying_amount_d1,omitempty"`
 	MiniGameFirstDayPayingRoi                  *float64 `json:"mini_game_first_day_paying_roi,omitempty"`
 	MiniGamePayingArpuD1                       *int64   `json:"mini_game_paying_arpu_d1,omitempty"`
 	MiniGameD3PayCount                         *int64   `json:"mini_game_d3_pay_count,omitempty"`
 	MiniGamePayD3Uv                            *int64   `json:"mini_game_pay_d3_uv,omitempty"`
-	MiniGamePayingAmountD3                     *int64   `json:"mini_game_paying_amount_d3,omitempty"`
 	MiniGamePayD3Roi                           *float64 `json:"mini_game_pay_d3_roi,omitempty"`
 	MiniGameD7PayCount                         *int64   `json:"mini_game_d7_pay_count,omitempty"`
 	MiniGamePayD7Uv                            *int64   `json:"mini_game_pay_d7_uv,omitempty"`
-	MiniGamePayingAmountD7                     *int64   `json:"mini_game_paying_amount_d7,omitempty"`
 	MiniGamePayD7Roi                           *float64 `json:"mini_game_pay_d7_roi,omitempty"`
 	MiniGameD14PayCount                        *int64   `json:"mini_game_d14_pay_count,omitempty"`
 	MiniGamePayD14Uv                           *int64   `json:"mini_game_pay_d14_uv,omitempty"`
-	MiniGamePayingAmountD14                    *int64   `json:"mini_game_paying_amount_d14,omitempty"`
 	MiniGamePayD14Roi                          *float64 `json:"mini_game_pay_d14_roi,omitempty"`
 	MiniGameD30PayCount                        *int64   `json:"mini_game_d30_pay_count,omitempty"`
 	MiniGamePayD30Uv                           *int64   `json:"mini_game_pay_d30_uv,omitempty"`
@@ -445,20 +420,15 @@ type HourlyReportApiListStruct struct {
 	FirstPayRate                               *float64 `json:"first_pay_rate,omitempty"`
 	LeadsPurchaseUv                            *int64   `json:"leads_purchase_uv,omitempty"`
 	MiniGameFirstPayAmount                     *int64   `json:"mini_game_first_pay_amount,omitempty"`
-	ActivatedTotalPaymentCost                  *int64   `json:"activated_total_payment_cost,omitempty"`
 	FirstDayFirstPayCount                      *int64   `json:"first_day_first_pay_count,omitempty"`
 	PaymentCostActivatedD1                     *int64   `json:"payment_cost_activated_d1,omitempty"`
 	FirstDayFirstPayRate                       *float64 `json:"first_day_first_pay_rate,omitempty"`
-	FirstDayFirstPayCost                       *int64   `json:"first_day_first_pay_cost,omitempty"`
 	ActiveD5FirstPayUv                         *int64   `json:"active_d5_first_pay_uv,omitempty"`
 	ActiveD5ClickFirstPayRate                  *float64 `json:"active_d5_click_first_pay_rate,omitempty"`
 	ActiveD5FirstPayCost                       *int64   `json:"active_d5_first_pay_cost,omitempty"`
 	MiniGameFirstPayingUsers                   *int64   `json:"mini_game_first_paying_users,omitempty"`
-	MiniGamePayD1PlaUv                         *int64   `json:"mini_game_pay_d1_pla_uv,omitempty"`
 	MiniGamePayD1PlaRate                       *float64 `json:"mini_game_pay_d1_pla_rate,omitempty"`
-	MiniGameFirstPayPlaAmount                  *int64   `json:"mini_game_first_pay_pla_amount,omitempty"`
 	MiniGameFirstPayPlaCost                    *int64   `json:"mini_game_first_pay_pla_cost,omitempty"`
-	MinigamePurchasePlaClk1dAmount             *int64   `json:"minigame_purchase_pla_clk_1d_amount,omitempty"`
 	MinigamePurchasePlaClk3dAmount             *int64   `json:"minigame_purchase_pla_clk_3d_amount,omitempty"`
 	MinigamePurchasePlaClk7dAmount             *int64   `json:"minigame_purchase_pla_clk_7d_amount,omitempty"`
 	MinigamePurchasePlaClk14dAmount            *int64   `json:"minigame_purchase_pla_clk_14d_amount,omitempty"`
@@ -468,23 +438,14 @@ type HourlyReportApiListStruct struct {
 	StayPay30dPv                               *int64   `json:"stay_pay_30d_pv,omitempty"`
 	MiniGameBfUv                               *int64   `json:"mini_game_bf_uv,omitempty"`
 	MiniGameBfCost                             *int64   `json:"mini_game_bf_cost,omitempty"`
-	MiniGameBfPurchaseUv                       *int64   `json:"mini_game_bf_purchase_uv,omitempty"`
-	MiniGameBfPurchaseAmount                   *int64   `json:"mini_game_bf_purchase_amount,omitempty"`
 	MiniGameBfPurchaseCost                     *int64   `json:"mini_game_bf_purchase_cost,omitempty"`
 	MiniGameBfPurchaseRoi                      *float64 `json:"mini_game_bf_purchase_roi,omitempty"`
 	MiniGameBfPurchaseArpu                     *int64   `json:"mini_game_bf_purchase_arpu,omitempty"`
-	MiniGameBfPurchaseD1Uv                     *int64   `json:"mini_game_bf_purchase_d1_uv,omitempty"`
-	MiniGameBfPurchaseD1Amount                 *int64   `json:"mini_game_bf_purchase_d1_amount,omitempty"`
 	MiniGameBfPurchaseD1Cost                   *int64   `json:"mini_game_bf_purchase_d1_cost,omitempty"`
 	MiniGameBfPurchaseD1Roi                    *float64 `json:"mini_game_bf_purchase_d1_roi,omitempty"`
 	MiniGameBfPurchaseD1Arpu                   *int64   `json:"mini_game_bf_purchase_d1_arpu,omitempty"`
 	MiniGameBfIncomeAmount                     *int64   `json:"mini_game_bf_income_amount,omitempty"`
-	MiniGameBfIncomeUv                         *int64   `json:"mini_game_bf_income_uv,omitempty"`
-	MiniGameBfIncomeCost                       *int64   `json:"mini_game_bf_income_cost,omitempty"`
-	MiniGameBfIncomeArpu                       *int64   `json:"mini_game_bf_income_arpu,omitempty"`
-	MiniGameBfIncomeRoi                        *float64 `json:"mini_game_bf_income_roi,omitempty"`
 	MiniGameBfIncomeD1Amount                   *int64   `json:"mini_game_bf_income_d1_amount,omitempty"`
-	MiniGameBfIncomeD1Uv                       *int64   `json:"mini_game_bf_income_d1_uv,omitempty"`
 	MiniGameBfIncomeD1Cost                     *int64   `json:"mini_game_bf_income_d1_cost,omitempty"`
 	MiniGameBfIncomeD1Roi                      *float64 `json:"mini_game_bf_income_d1_roi,omitempty"`
 	MiniGameBfIncomeD1Arpu                     *int64   `json:"mini_game_bf_income_d1_arpu,omitempty"`
@@ -493,29 +454,23 @@ type HourlyReportApiListStruct struct {
 	KeyBehaviorConversionsRate                 *float64 `json:"key_behavior_conversions_rate,omitempty"`
 	ApplyPv                                    *int64   `json:"apply_pv,omitempty"`
 	ApplyCost                                  *int64   `json:"apply_cost,omitempty"`
-	AppApplyUv                                 *int64   `json:"app_apply_uv,omitempty"`
-	WebApplyUv                                 *int64   `json:"web_apply_uv,omitempty"`
 	BizPageApplyUv                             *int64   `json:"biz_page_apply_uv,omitempty"`
 	BizPageApplyRate                           *float64 `json:"biz_page_apply_rate,omitempty"`
 	BizPageApplyCost                           *int64   `json:"biz_page_apply_cost,omitempty"`
 	PreCreditPv                                *int64   `json:"pre_credit_pv,omitempty"`
 	PreCreditAmount                            *int64   `json:"pre_credit_amount,omitempty"`
 	PreCreditCost                              *int64   `json:"pre_credit_cost,omitempty"`
-	AppPreCreditUv                             *int64   `json:"app_pre_credit_uv,omitempty"`
 	BizPreCreditUv                             *int64   `json:"biz_pre_credit_uv,omitempty"`
 	BizPreCreditUvCost                         *int64   `json:"biz_pre_credit_uv_cost,omitempty"`
 	CreditPv                                   *int64   `json:"credit_pv,omitempty"`
 	CreditAmount                               *int64   `json:"credit_amount,omitempty"`
 	CreditCost                                 *int64   `json:"credit_cost,omitempty"`
-	AppCreditUv                                *int64   `json:"app_credit_uv,omitempty"`
-	WebCreditUv                                *int64   `json:"web_credit_uv,omitempty"`
 	BizCreditUv                                *int64   `json:"biz_credit_uv,omitempty"`
 	BizCreditCost                              *int64   `json:"biz_credit_cost,omitempty"`
 	BizCreditRate                              *float64 `json:"biz_credit_rate,omitempty"`
 	CreApplicationRate                         *float64 `json:"cre_application_rate,omitempty"`
 	WithdrawDepositPv                          *int64   `json:"withdraw_deposit_pv,omitempty"`
 	WithdrawDepositAmount                      *int64   `json:"withdraw_deposit_amount,omitempty"`
-	AppWithdrawUv                              *int64   `json:"app_withdraw_uv,omitempty"`
 	BizWithdrawDepositsUv                      *int64   `json:"biz_withdraw_deposits_uv,omitempty"`
 	BizWithdrawDepositsUvCost                  *int64   `json:"biz_withdraw_deposits_uv_cost,omitempty"`
 	CouponClickCount                           *int64   `json:"coupon_click_count,omitempty"`
@@ -539,8 +494,6 @@ type HourlyReportApiListStruct struct {
 	AdPayingUsers24h                           *int64   `json:"ad_paying_users_24h,omitempty"`
 	IncomeRoi124h                              *float64 `json:"income_roi_1_24h,omitempty"`
 	AdPurArpuCostD124h                         *int64   `json:"ad_pur_arpu_cost_d1_24h,omitempty"`
-	AdPurArpuCostD124hReg                      *int64   `json:"ad_pur_arpu_cost_d1_24h_reg,omitempty"`
-	AdPurArpuCostD124hRegPla                   *int64   `json:"ad_pur_arpu_cost_d1_24h_reg_pla,omitempty"`
 	FirstDayAdPurArppuCost24h                  *int64   `json:"first_day_ad_pur_arppu_cost_24h,omitempty"`
 	IncomePv24hPla                             *int64   `json:"income_pv_24h_pla,omitempty"`
 	IncomeVal24hPla                            *int64   `json:"income_val_24h_pla,omitempty"`
@@ -562,22 +515,18 @@ type HourlyReportApiListStruct struct {
 	IncomeRoi7                                 *float64 `json:"income_roi_7,omitempty"`
 	IncomeVal14                                *int64   `json:"income_val_14,omitempty"`
 	IncomeRoi14                                *float64 `json:"income_roi_14,omitempty"`
-	MiniGameAdMonetizationUsers                *int64   `json:"mini_game_ad_monetization_users,omitempty"`
 	MiniGameAdMonetizationAmount               *int64   `json:"mini_game_ad_monetization_amount,omitempty"`
 	MiniGameAdMonetizationCost                 *int64   `json:"mini_game_ad_monetization_cost,omitempty"`
 	MiniGameAdMonetizationRoi                  *float64 `json:"mini_game_ad_monetization_roi,omitempty"`
 	MiniGameAdMonetizationArpu                 *int64   `json:"mini_game_ad_monetization_arpu,omitempty"`
-	MiniGameFirstDayAdMonetizationUsers        *int64   `json:"mini_game_first_day_ad_monetization_users,omitempty"`
 	MiniGameFirstDayAdMonetizationAmount       *int64   `json:"mini_game_first_day_ad_monetization_amount,omitempty"`
 	MiniGameFirstDayAdPayingCost               *int64   `json:"mini_game_first_day_ad_paying_cost,omitempty"`
 	MiniGameIncomeRoi1                         *float64 `json:"mini_game_income_roi_1,omitempty"`
 	MiniGameFirstDayAdPayingArpu               *int64   `json:"mini_game_first_day_ad_paying_arpu,omitempty"`
 	Minigame3dIncomeCount                      *int64   `json:"minigame_3d_income_count,omitempty"`
-	Minigame3dIncomeUv                         *int64   `json:"minigame_3d_income_uv,omitempty"`
 	MiniGameAdMonetizationAmountD3             *int64   `json:"mini_game_ad_monetization_amount_d3,omitempty"`
 	Minigame3dIncomeRoi                        *float64 `json:"minigame_3d_income_roi,omitempty"`
 	Minigame7dIncomeCount                      *int64   `json:"minigame_7d_income_count,omitempty"`
-	Minigame7dIncomeUv                         *int64   `json:"minigame_7d_income_uv,omitempty"`
 	MiniGameAdMonetizationAmountD7             *int64   `json:"mini_game_ad_monetization_amount_d7,omitempty"`
 	Minigame7dIncomeRoi                        *float64 `json:"minigame_7d_income_roi,omitempty"`
 	MiniGameAdMonetizationAmountD14            *int64   `json:"mini_game_ad_monetization_amount_d14,omitempty"`
@@ -688,6 +637,10 @@ type HourlyReportApiListStruct struct {
 	ClkLeftGridInfoPv                          *int64   `json:"clk_left_grid_info_pv,omitempty"`
 	ClkLeftGridMiddlePv                        *int64   `json:"clk_left_grid_middle_pv,omitempty"`
 	ClkRightGridPv                             *int64   `json:"clk_right_grid_pv,omitempty"`
+	CvsCpnVideoPlayPv                          *int64   `json:"cvs_cpn_video_play_pv,omitempty"`
+	CvsCpnVideoPlayUv                          *int64   `json:"cvs_cpn_video_play_uv,omitempty"`
+	CvsCpnVideoPlayDuration                    *float64 `json:"cvs_cpn_video_play_duration,omitempty"`
+	AvgCpnplayVideoTime                        *float64 `json:"avg_cpnplay_video_time,omitempty"`
 	AdMonetizationCost                         *float64 `json:"ad_monetization_cost,omitempty"`
 	AdMonetizationRoi                          *float64 `json:"ad_monetization_roi,omitempty"`
 	AdMonetizationActive3dPv                   *int64   `json:"ad_monetization_active_3d_pv,omitempty"`
@@ -695,6 +648,7 @@ type HourlyReportApiListStruct struct {
 	AdMonetizationActive7dPv                   *int64   `json:"ad_monetization_active_7d_pv,omitempty"`
 	AdMonetizationDedupActive7dPv              *int64   `json:"ad_monetization_dedup_active_7d_pv,omitempty"`
 	ClkRedpocketBtnSubscribePv                 *int64   `json:"clk_redpocket_btn_subscribe_pv,omitempty"`
+	ClkBlessingCardPv                          *int64   `json:"clk_blessing_card_pv,omitempty"`
 	ClkShortcutMenusPv                         *int64   `json:"clk_shortcut_menus_pv,omitempty"`
 	ChannelsDetailBtnPv                        *int64   `json:"channels_detail_btn_pv,omitempty"`
 	ZoneHeaderLiveClickCnt                     *int64   `json:"zone_header_live_click_cnt,omitempty"`
@@ -727,6 +681,203 @@ type HourlyReportApiListStruct struct {
 	AdMonetizationBkPlaActive7dRoi             *float64 `json:"ad_monetization_bk_pla_active_7d_roi,omitempty"`
 	AdMonetizationBkPlaActive14dRoi            *float64 `json:"ad_monetization_bk_pla_active_14d_roi,omitempty"`
 	ClkAppservicePv                            *int64   `json:"clk_appservice_pv,omitempty"`
+	PurchaseBkActive1dAmount                   *int64   `json:"purchase_bk_active_1d_amount,omitempty"`
+	PurchaseDedupBkActive1dPv                  *int64   `json:"purchase_dedup_bk_active_1d_pv,omitempty"`
+	PurchaseDedupPv                            *int64   `json:"purchase_dedup_pv,omitempty"`
+	MixPurchaseAmount                          *int64   `json:"mix_purchase_amount,omitempty"`
+	MixPayArpu                                 *int64   `json:"mix_pay_arpu,omitempty"`
+	MixPayCost                                 *int64   `json:"mix_pay_cost,omitempty"`
+	MixPayRoi                                  *float64 `json:"mix_pay_roi,omitempty"`
+	MixPurchaseActive24hAmount                 *int64   `json:"mix_purchase_active_24h_amount,omitempty"`
+	MixPayActive24hRoi                         *float64 `json:"mix_pay_active_24h_roi,omitempty"`
+	MixPurchaseAmountFirstDay                  *int64   `json:"mix_purchase_amount_first_day,omitempty"`
+	MixPayRoiFirstDay                          *float64 `json:"mix_pay_roi_first_day,omitempty"`
+	MixPurchaseActive3dAmount                  *int64   `json:"mix_purchase_active_3d_amount,omitempty"`
+	MixPayActive3dRoi                          *float64 `json:"mix_pay_active_3d_roi,omitempty"`
+	MixPurchaseActive7dAmount                  *int64   `json:"mix_purchase_active_7d_amount,omitempty"`
+	MixPayActive7dRoi                          *float64 `json:"mix_pay_active_7d_roi,omitempty"`
+	MixPurchaseActive14dAmount                 *int64   `json:"mix_purchase_active_14d_amount,omitempty"`
+	MixPayActive14dRoi                         *float64 `json:"mix_pay_active_14d_roi,omitempty"`
+	MixPurchaseDedupPv                         *int64   `json:"mix_purchase_dedup_pv,omitempty"`
+	PurchaseDedupBkPv                          *int64   `json:"purchase_dedup_bk_pv,omitempty"`
+	PurchaseBkAmount                           *int64   `json:"purchase_bk_amount,omitempty"`
+	PurchaseBkActive24hAmount                  *int64   `json:"purchase_bk_active_24h_amount,omitempty"`
+	PurchaseBkActive24hPv                      *int64   `json:"purchase_bk_active_24h_pv,omitempty"`
+	PayBkActive24hRoi                          *float64 `json:"pay_bk_active_24h_roi,omitempty"`
+	PayBkActive1dRoi                           *float64 `json:"pay_bk_active_1d_roi,omitempty"`
+	PurchaseBkActive3dAmount                   *int64   `json:"purchase_bk_active_3d_amount,omitempty"`
+	PayBkActive3dRoi                           *float64 `json:"pay_bk_active_3d_roi,omitempty"`
+	PurchaseBkActive7dAmount                   *int64   `json:"purchase_bk_active_7d_amount,omitempty"`
+	PayBkActive7dRoi                           *float64 `json:"pay_bk_active_7d_roi,omitempty"`
+	PurchaseBkActive14dAmount                  *int64   `json:"purchase_bk_active_14d_amount,omitempty"`
+	PayBkActive14dRoi                          *float64 `json:"pay_bk_active_14d_roi,omitempty"`
+	PurchaseRegAmount                          *int64   `json:"purchase_reg_amount,omitempty"`
+	PurchaseDedupRegPv                         *int64   `json:"purchase_dedup_reg_pv,omitempty"`
+	PurchaseRegActive24hAmount                 *int64   `json:"purchase_reg_active_24h_amount,omitempty"`
+	PurchaseRegActive3dAmount                  *int64   `json:"purchase_reg_active_3d_amount,omitempty"`
+	PurchaseRegActive7dAmount                  *int64   `json:"purchase_reg_active_7d_amount,omitempty"`
+	PurchaseRegActive14dAmount                 *int64   `json:"purchase_reg_active_14d_amount,omitempty"`
+	PurchaseRegActive1dPv                      *int64   `json:"purchase_reg_active_1d_pv,omitempty"`
+	PurchaseDedupRegActive1dPv                 *int64   `json:"purchase_dedup_reg_active_1d_pv,omitempty"`
+	PurchaseRegActive1dAmount                  *int64   `json:"purchase_reg_active_1d_amount,omitempty"`
+	ClkHotElementPv                            *int64   `json:"clk_hot_element_pv,omitempty"`
+	ClkHotElementUv                            *int64   `json:"clk_hot_element_uv,omitempty"`
+	HotElementCtr                              *float64 `json:"hot_element_ctr,omitempty"`
+	SecurityNegativeDedupPv                    *int64   `json:"security_negative_dedup_pv,omitempty"`
+	ClkInterpageBtnPv                          *int64   `json:"clk_interpage_btn_pv,omitempty"`
+	AdMonetizationPlaRegActive1dMixRoi         *float64 `json:"ad_monetization_pla_reg_active_1d_mix_roi,omitempty"`
+	AdMonetizationPlaRegActive24hMixRoi        *float64 `json:"ad_monetization_pla_reg_active_24h_mix_roi,omitempty"`
+	RealCostAppAutoDownload                    *int64   `json:"real_cost_app_auto_download,omitempty"`
+	WechatAddFansAfterV30sDedupPv              *int64   `json:"wechat_add_fans_after_v30s_dedup_pv,omitempty"`
+	VisitStorePv                               *int64   `json:"visit_store_pv,omitempty"`
+	VisitStoreDedupPvCost                      *int64   `json:"visit_store_dedup_pv_cost,omitempty"`
+	VisitStorePvCost                           *int64   `json:"visit_store_pv_cost,omitempty"`
+	ChannelsLiveEleConvExpPlaPv                *int64   `json:"channels_live_ele_conv_exp_pla_pv,omitempty"`
+	ChannelsLiveEleConvClkPlaPv                *int64   `json:"channels_live_ele_conv_clk_pla_pv,omitempty"`
+	AuthorizePv                                *int64   `json:"authorize_pv,omitempty"`
+	RetentionPlaPv                             *int64   `json:"retention_pla_pv,omitempty"`
+	RetentionD1UvRate                          *float64 `json:"retention_d1_uv_rate,omitempty"`
+	PurchaseFirstAllDedupTouch24hPv            *int64   `json:"purchase_first_all_dedup_touch_24h_pv,omitempty"`
+	PurchaseFirstAllDedupTouch24hAmount        *int64   `json:"purchase_first_all_dedup_touch_24h_amount,omitempty"`
+	PurchaseFirstAllDedupTouch24hUnitPrice     *int64   `json:"purchase_first_all_dedup_touch_24h_unit_price,omitempty"`
+	PayingUsersD1Cost                          *int64   `json:"paying_users_d1_cost,omitempty"`
+	ChannelsLiveEleCommodityClkPlaPv           *int64   `json:"channels_live_ele_commodity_clk_pla_pv,omitempty"`
+	ChannelsLiveEleCommodityClkPlaDedupPv      *int64   `json:"channels_live_ele_commodity_clk_pla_dedup_pv,omitempty"`
+	ClkWechatShopPv                            *int64   `json:"clk_wechat_shop_pv,omitempty"`
+	ClkTopicinfoPv                             *int64   `json:"clk_topicinfo_pv,omitempty"`
+	ClkLearnMorePv                             *int64   `json:"clk_learn_more_pv,omitempty"`
+	OpenAccountPv                              *int64   `json:"open_account_pv,omitempty"`
+	OpenAccountPvCost                          *int64   `json:"open_account_pv_cost,omitempty"`
+	VideoOuterPlay5sRate                       *float64 `json:"video_outer_play5s_rate,omitempty"`
+	IncomeVal24hPlaRoi                         *float64 `json:"income_val_24h_pla_roi,omitempty"`
+	ViewDramaDedupPv                           *int64   `json:"view_drama_dedup_pv,omitempty"`
+	ViewDramaDedupPvRate                       *float64 `json:"view_drama_dedup_pv_rate,omitempty"`
+	ViewDramaDedupPvCost                       *int64   `json:"view_drama_dedup_pv_cost,omitempty"`
+	ClkSellingPointsElementPv                  *int64   `json:"clk_selling_points_element_pv,omitempty"`
+	VisitStoreFirstDedupPv                     *int64   `json:"visit_store_first_dedup_pv,omitempty"`
+	ClkFullwidthBackgroundPv                   *int64   `json:"clk_fullwidth_background_pv,omitempty"`
+	ClkHeaderAreaPv                            *int64   `json:"clk_header_area_pv,omitempty"`
+	OrderFirstDedupPv                          *int64   `json:"order_first_dedup_pv,omitempty"`
+	OrderFirstDedupPvCost                      *int64   `json:"order_first_dedup_pv_cost,omitempty"`
+	OrderFirstDedupPvRate                      *float64 `json:"order_first_dedup_pv_rate,omitempty"`
+	StorePayAmountOff                          *int64   `json:"store_pay_amount_off,omitempty"`
+	StorePayUvOff                              *int64   `json:"store_pay_uv_off,omitempty"`
+	StorePayPvOff                              *int64   `json:"store_pay_pv_off,omitempty"`
+	ClkSellingPointsElementUv                  *int64   `json:"clk_selling_points_element_uv,omitempty"`
+	OrderRefundActive24hPv                     *int64   `json:"order_refund_active_24h_pv,omitempty"`
+	OrderRefundActive24hRate                   *float64 `json:"order_refund_active_24h_rate,omitempty"`
+	OrderSettle24hPv                           *int64   `json:"order_settle_24h_pv,omitempty"`
+	OrderSettle24hRate                         *float64 `json:"order_settle_24h_rate,omitempty"`
+	OrderSettle24hCost                         *int64   `json:"order_settle_24h_cost,omitempty"`
+	LanJumpButtonRate                          *float64 `json:"lan_jump_button_rate,omitempty"`
+	RegDedup1dPv                               *int64   `json:"reg_dedup1d_pv,omitempty"`
+	BfDedupPv                                  *int64   `json:"bf_dedup_pv,omitempty"`
+	FollowBizAllDedupPv                        *int64   `json:"follow_biz_all_dedup_pv,omitempty"`
+	FirOgConvAutoAcquisitionPv                 *int64   `json:"fir_og_conv_auto_acquisition_pv,omitempty"`
+	SecOgConvAutoAcquisitionPv                 *int64   `json:"sec_og_conv_auto_acquisition_pv,omitempty"`
+	ScanCodePlaPv                              *int64   `json:"scan_code_pla_pv,omitempty"`
+	PurchasePlaBkActive1dAmount                *int64   `json:"purchase_pla_bk_active_1d_amount,omitempty"`
+	BfAllDedupPv                               *int64   `json:"bf_all_dedup_pv,omitempty"`
+	RetentionDedupPv                           *int64   `json:"retention_dedup_pv,omitempty"`
+	RetentionAllDedupPv                        *int64   `json:"retention_all_dedup_pv,omitempty"`
+	CreditDedupPv                              *int64   `json:"credit_dedup_pv,omitempty"`
+	PreCreditDedupPv                           *int64   `json:"pre_credit_dedup_pv,omitempty"`
+	WithdrawDedupPv                            *int64   `json:"withdraw_dedup_pv,omitempty"`
+	ApplyDedupPv                               *int64   `json:"apply_dedup_pv,omitempty"`
+	PurchaseDedupImpPv                         *int64   `json:"purchase_dedup_imp_pv,omitempty"`
+	PurchaseDedupClkPv                         *int64   `json:"purchase_dedup_clk_pv,omitempty"`
+	PurchaseImpAmount                          *int64   `json:"purchase_imp_amount,omitempty"`
+	PurchaseClkAmount                          *int64   `json:"purchase_clk_amount,omitempty"`
+	PurchaseImpRate                            *float64 `json:"purchase_imp_rate,omitempty"`
+	PurchaseClk2Rate                           *float64 `json:"purchase_clk2_rate,omitempty"`
+	PurchaseImpCost                            *int64   `json:"purchase_imp_cost,omitempty"`
+	PurchaseClkCost                            *int64   `json:"purchase_clk_cost,omitempty"`
+	PurchaseImpRoi                             *float64 `json:"purchase_imp_roi,omitempty"`
+	PurchaseClkRoi                             *float64 `json:"purchase_clk_roi,omitempty"`
+	OrderDedupImpPv                            *int64   `json:"order_dedup_imp_pv,omitempty"`
+	OrderDedupClkPv                            *int64   `json:"order_dedup_clk_pv,omitempty"`
+	OrderClk3dPv                               *int64   `json:"order_clk_3d_pv,omitempty"`
+	OrderImp3dPv                               *int64   `json:"order_imp_3d_pv,omitempty"`
+	OrderClk23dPv                              *int64   `json:"order_clk2_3d_pv,omitempty"`
+	OrderClk3dAmount                           *int64   `json:"order_clk_3d_amount,omitempty"`
+	OrderImp3dAmount                           *int64   `json:"order_imp_3d_amount,omitempty"`
+	OrderClk23dAmount                          *int64   `json:"order_clk2_3d_amount,omitempty"`
+	OrderClk3dCost                             *int64   `json:"order_clk_3d_cost,omitempty"`
+	OrderImp3dCost                             *int64   `json:"order_imp_3d_cost,omitempty"`
+	OrderClk23dCost                            *int64   `json:"order_clk2_3d_cost,omitempty"`
+	OrderClk3dRoi                              *float64 `json:"order_clk_3d_roi,omitempty"`
+	OrderImp3dRoi                              *float64 `json:"order_imp_3d_roi,omitempty"`
+	OrderClk23dRoi                             *float64 `json:"order_clk2_3d_roi,omitempty"`
+	IntentionAfterPaymentDedupPv               *int64   `json:"intention_after_payment_dedup_pv,omitempty"`
+	RegDedupCost                               *int64   `json:"reg_dedup_cost,omitempty"`
+	ClkBheaderPv                               *int64   `json:"clk_bheader_pv,omitempty"`
+	ClkBhNamePv                                *int64   `json:"clk_bh_name_pv,omitempty"`
+	ClkBhStorePv                               *int64   `json:"clk_bh_store_pv,omitempty"`
+	ClkBhServicePv                             *int64   `json:"clk_bh_service_pv,omitempty"`
+	ClkBhPhonePv                               *int64   `json:"clk_bh_phone_pv,omitempty"`
+	ClkBaccountPv                              *int64   `json:"clk_baccount_pv,omitempty"`
+	ClkBaLivetagPv                             *int64   `json:"clk_ba_livetag_pv,omitempty"`
+	ClkBaBizPv                                 *int64   `json:"clk_ba_biz_pv,omitempty"`
+	ClkBaFinderPv                              *int64   `json:"clk_ba_finder_pv,omitempty"`
+	ClkBaWeappPv                               *int64   `json:"clk_ba_weapp_pv,omitempty"`
+	ClkBmarketingPv                            *int64   `json:"clk_bmarketing_pv,omitempty"`
+	ClkBmTabPv                                 *int64   `json:"clk_bm_tab_pv,omitempty"`
+	ClkBmProductPv                             *int64   `json:"clk_bm_product_pv,omitempty"`
+	ClkBaWegamePv                              *int64   `json:"clk_ba_wegame_pv,omitempty"`
+	WithdrawDepositClk7dAmount                 *int64   `json:"withdraw_deposit_clk_7d_amount,omitempty"`
+	WithdrawDepositClk7dRoi                    *float64 `json:"withdraw_deposit_clk_7d_roi,omitempty"`
+	LoanQuotaOpenDedupPv                       *int64   `json:"loan_quota_open_dedup_pv,omitempty"`
+	LoanQuotaOpenDedupCost                     *int64   `json:"loan_quota_open_dedup_cost,omitempty"`
+	LoanDedupPv                                *int64   `json:"loan_dedup_pv,omitempty"`
+	LoanDedupCost                              *int64   `json:"loan_dedup_cost,omitempty"`
+	ClkTopicElementPv                          *int64   `json:"clk_topic_element_pv,omitempty"`
+	AdMonetizationEcpm                         *int64   `json:"ad_monetization_ecpm,omitempty"`
+	AdMonetizationRegActive14dAmount           *int64   `json:"ad_monetization_reg_active_14d_amount,omitempty"`
+	AdMonetizationRegActive30dAmount           *int64   `json:"ad_monetization_reg_active_30d_amount,omitempty"`
+	AdMonetizationRegActive60dAmount           *int64   `json:"ad_monetization_reg_active_60d_amount,omitempty"`
+	IncomeVal30                                *int64   `json:"income_val_30,omitempty"`
+	IncomeVal60                                *int64   `json:"income_val_60,omitempty"`
+	AdMonetizationRegActive14dRoi              *float64 `json:"ad_monetization_reg_active_14d_roi,omitempty"`
+	AdMonetizationRegActive30dRoi              *float64 `json:"ad_monetization_reg_active_30d_roi,omitempty"`
+	AdMonetizationRegActive60dRoi              *float64 `json:"ad_monetization_reg_active_60d_roi,omitempty"`
+	IncomeRoi30                                *float64 `json:"income_roi_30,omitempty"`
+	IncomeRoi60                                *float64 `json:"income_roi_60,omitempty"`
+	AdMonetizationDedupRegActive14dPv          *int64   `json:"ad_monetization_dedup_reg_active_14d_pv,omitempty"`
+	AdMonetizationDedupRegActive30dPv          *int64   `json:"ad_monetization_dedup_reg_active_30d_pv,omitempty"`
+	AdMonetizationDedupRegActive60dPv          *int64   `json:"ad_monetization_dedup_reg_active_60d_pv,omitempty"`
+	AdMonetizationDedupActive14dPv             *int64   `json:"ad_monetization_dedup_active_14d_pv,omitempty"`
+	AdMonetizationDedupActive30dPv             *int64   `json:"ad_monetization_dedup_active_30d_pv,omitempty"`
+	AdMonetizationDedupActive60dPv             *int64   `json:"ad_monetization_dedup_active_60d_pv,omitempty"`
+	AdMonetizationRegActive14dPv               *int64   `json:"ad_monetization_reg_active_14d_pv,omitempty"`
+	AdMonetizationRegActive30dPv               *int64   `json:"ad_monetization_reg_active_30d_pv,omitempty"`
+	AdMonetizationRegActive60dPv               *int64   `json:"ad_monetization_reg_active_60d_pv,omitempty"`
+	AdMonetizationActive14dPv                  *int64   `json:"ad_monetization_active_14d_pv,omitempty"`
+	AdMonetizationActive30dPv                  *int64   `json:"ad_monetization_active_30d_pv,omitempty"`
+	AdMonetizationActive60dPv                  *int64   `json:"ad_monetization_active_60d_pv,omitempty"`
+	ClkAdFlipCardPv                            *int64   `json:"clk_ad_flip_card_pv,omitempty"`
+	CommissionAmount                           *int64   `json:"commission_amount,omitempty"`
+	CommissionRoi                              *float64 `json:"commission_roi,omitempty"`
+	OrderNetPv                                 *int64   `json:"order_net_pv,omitempty"`
+	OrderNetAmount                             *int64   `json:"order_net_amount,omitempty"`
+	OrderNetRoi                                *float64 `json:"order_net_roi,omitempty"`
+	OrderNetPvCost                             *int64   `json:"order_net_pv_cost,omitempty"`
+	ClkBhAnimPv                                *int64   `json:"clk_bh_anim_pv,omitempty"`
+	ClkBredpocketPv                            *int64   `json:"clk_bredpocket_pv,omitempty"`
+	ClkBrSubPv                                 *int64   `json:"clk_br_sub_pv,omitempty"`
+	ClkBrSharePv                               *int64   `json:"clk_br_share_pv,omitempty"`
+	ClkBrBtnPv                                 *int64   `json:"clk_br_btn_pv,omitempty"`
+	ClkBrDrivePv                               *int64   `json:"clk_br_drive_pv,omitempty"`
+	ClkBquickPv                                *int64   `json:"clk_bquick_pv,omitempty"`
+	ClkBappPv                                  *int64   `json:"clk_bapp_pv,omitempty"`
+	ClkBacountPv                               *int64   `json:"clk_bacount_pv,omitempty"`
+	ClkBaMorePv                                *int64   `json:"clk_ba_more_pv,omitempty"`
+	ClkBmActivityPv                            *int64   `json:"clk_bm_activity_pv,omitempty"`
+	ClkBmVerticalPv                            *int64   `json:"clk_bm_vertical_pv,omitempty"`
+	ClkBmPrivilegePv                           *int64   `json:"clk_bm_privilege_pv,omitempty"`
+	ClkBmSeriesPv                              *int64   `json:"clk_bm_series_pv,omitempty"`
+	ClkBmDetailPv                              *int64   `json:"clk_bm_detail_pv,omitempty"`
+	ClkRpsPv                                   *int64   `json:"clk_rps_pv,omitempty"`
+	SliderPv                                   *int64   `json:"slider_pv,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`
@@ -741,6 +892,7 @@ type HourlyReportApiListStruct struct {
 	ExpAvgRank                                 *float64 `json:"exp_avg_rank,omitempty"`
 	ExpOverallTopPv                            *int64   `json:"exp_overall_top_pv,omitempty"`
 	ClkTopPv                                   *int64   `json:"clk_top_pv,omitempty"`
+	RealCostTop                                *int64   `json:"real_cost_top,omitempty"`
 	ProjectId                                  *int64   `json:"project_id,omitempty"`
 	ProjectName                                *string  `json:"project_name,omitempty"`
 }

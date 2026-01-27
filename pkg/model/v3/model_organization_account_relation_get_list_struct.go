@@ -11,8 +11,10 @@ package model
 
 // 返回结构
 type OrganizationAccountRelationGetListStruct struct {
-	AccountId       *int64  `json:"account_id,omitempty"`
-	CorporationName *string `json:"corporation_name,omitempty"`
-	IsAdx           *bool   `json:"is_adx,omitempty"`
-	IsMp            *bool   `json:"is_mp,omitempty"`
+	AccountId       *int64               `json:"account_id,omitempty"`
+	CorporationName *string              `json:"corporation_name,omitempty"`
+	IsBid           *bool                `json:"is_bid,omitempty"`
+	IsMp            *bool                `json:"is_mp,omitempty"`
+	IsAdx           *bool                `json:"is_adx,omitempty"`
+	CommentList     *[]CommentDataStruct `json:"comment_list,omitempty"`
 }

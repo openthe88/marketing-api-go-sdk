@@ -16,7 +16,6 @@ Name | Type | Description | Notes
 **Targeting** | [***WriteTargetingSetting**](write_targeting_setting.md) |  | [optional] [default to null]
 **SceneSpec** | [***SceneTargetingForWrite**](scene_targeting_for_write.md) |  | [optional] [default to null]
 **UserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
-**BidStrategy** | [***BidStrategy**](BidStrategy.md) |  | [optional] [default to null]
 **DeepConversionSpec** | [***DeepConversionSpec**](deep_conversion_spec.md) |  | [optional] [default to null]
 **ConversionId** | **int64** |  | [optional] [default to null]
 **DeepConversionBehaviorBid** | **int64** |  | [optional] [default to null]
@@ -28,6 +27,7 @@ Name | Type | Description | Notes
 **AutoAcquisitionBudget** | **int64** |  | [optional] [default to null]
 **AutoDerivedLandingPageSwitch** | **bool** |  | [optional] [default to null]
 **AutoDerivedCreativeEnabled** | **bool** |  | [optional] [default to null]
+**AutoDerivedCreativePreference** | [***AutoDerivedCreativePreference**](auto_derived_creative_preference.md) |  | [optional] [default to null]
 **ConfiguredStatus** | [***ConfiguredStatus**](ConfiguredStatus.md) |  | [optional] [default to null]
 **FlowOptimizationEnabled** | **bool** |  | [optional] [default to null]
 **PoiList** | **[]string** |  | [optional] [default to null]
@@ -37,8 +37,12 @@ Name | Type | Description | Notes
 **CostConstraintScene** | [***CostConstraintScene**](CostConstraintScene.md) |  | [optional] [default to null]
 **CustomCostCap** | **int64** |  | [optional] [default to null]
 **FeedbackId** | **int64** |  | [optional] [default to null]
+**AoiOptimizationStrategy** | [***AoiOptimizationStrategy**](aoi_optimization_strategy.md) |  | [optional] [default to null]
 **SearchExpandTargetingSwitch** | [***SearchExpandTargetingSwitch**](SearchExpandTargetingSwitch.md) |  | [optional] [default to null]
 **CloudUnionSpec** | [***CloudUnionSpec**](cloud_union_spec.md) |  | [optional] [default to null]
+**LiveRecommendStrategyEnabled** | **bool** |  | [optional] [default to null]
+**CustomCostRoiCap** | **float64** |  | [optional] [default to null]
+**SmartTargetingMode** | [***SmartTargetingMode**](SmartTargetingMode.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

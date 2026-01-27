@@ -20,13 +20,16 @@ type DynamicCreativesGetListStruct struct {
 	CreativeComponents         *CreativeComponents         `json:"creative_components,omitempty"`
 	ImpressionTrackingUrl      *string                     `json:"impression_tracking_url,omitempty"`
 	ClickTrackingUrl           *string                     `json:"click_tracking_url,omitempty"`
+	ProgramCreativeInfo        *ProgramCreativeInfo        `json:"program_creative_info,omitempty"`
 	PageTrackUrl               *string                     `json:"page_track_url,omitempty"`
 	ConfiguredStatus           ConfiguredStatus            `json:"configured_status,omitempty"`
-	EnableBreakthroughSiteset  *bool                       `json:"enable_breakthrough_siteset,omitempty"`
 	IsDeleted                  *bool                       `json:"is_deleted,omitempty"`
 	CreatedTime                *int64                      `json:"created_time,omitempty"`
 	LastModifiedTime           *int64                      `json:"last_modified_time,omitempty"`
 	MarketingAssetVerification *MarketingAssetVerification `json:"marketing_asset_verification,omitempty"`
+	CreativeSetApprovalStatus  CreativeSetApprovalStatus   `json:"creative_set_approval_status,omitempty"`
 	Source                     AdCreativeSource            `json:"source,omitempty"`
 	AssetInconsistentStatus    AssetInconsistentStatus     `json:"asset_inconsistent_status,omitempty"`
+	SourceDynamicCreativeId    *int64                      `json:"source_dynamic_creative_id,omitempty"`
+	CreativeInsight            *CreativeInsight            `json:"creative_insight,omitempty"`
 }

@@ -9,7 +9,7 @@
 
 package model
 
-// ConversionOptimizationGoal : 深度优化ROI目标
+// ConversionOptimizationGoal : ROI目标
 type ConversionOptimizationGoal string
 
 // List of ConversionOptimizationGoal
@@ -33,4 +33,7 @@ const (
 	ConversionOptimizationGoal_30DAYLONGTERMPURCHASEROAS       ConversionOptimizationGoal = "GOAL_30DAY_LONGTERM_PURCHASE_ROAS"
 	ConversionOptimizationGoal_QYT_7_DAY_LIVE_STREAM_DEAL_ROAS ConversionOptimizationGoal = "GOAL_QYT_7DAY_LIVE_STREAM_DEAL_ROAS"
 	ConversionOptimizationGoal_WITHDRAW_DEPOSITS_ROAS          ConversionOptimizationGoal = "GOAL_WITHDRAW_DEPOSITS_ROAS"
+	ConversionOptimizationGoal_1DAYPURCHASEMONETIZATIONROAS    ConversionOptimizationGoal = "GOAL_1DAY_PURCHASE_MONETIZATION_ROAS"
+	ConversionOptimizationGoal_NET_PROFIT_24_H_ROAS            ConversionOptimizationGoal = "GOAL_NET_PROFIT_24H_ROAS"
+	ConversionOptimizationGoal_CPS_ESTIMATED_DISTRIBUTE_ROAS   ConversionOptimizationGoal = "GOAL_CPS_ESTIMATED_DISTRIBUTE_ROAS"
 )

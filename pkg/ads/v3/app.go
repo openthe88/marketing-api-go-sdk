@@ -13,6 +13,10 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 )
 
+func (c *SDKClient) AccountSubsidy() *api.AccountSubsidyApiService {
+	return c.Client.AccountSubsidyApi
+}
+
 func (c *SDKClient) AccountVersion() *api.AccountVersionApiService {
 	return c.Client.AccountVersionApi
 }
@@ -77,6 +81,10 @@ func (c *SDKClient) AgencyRealtimeCost() *api.AgencyRealtimeCostApiService {
 	return c.Client.AgencyRealtimeCostApi
 }
 
+func (c *SDKClient) AgencyWalletList() *api.AgencyWalletListApiService {
+	return c.Client.AgencyWalletListApi
+}
+
 func (c *SDKClient) AndroidChannel() *api.AndroidChannelApiService {
 	return c.Client.AndroidChannelApi
 }
@@ -137,6 +145,18 @@ func (c *SDKClient) BusinessPoint() *api.BusinessPointApiService {
 	return c.Client.BusinessPointApi
 }
 
+func (c *SDKClient) BusinessUnit() *api.BusinessUnitApiService {
+	return c.Client.BusinessUnitApi
+}
+
+func (c *SDKClient) BusinessUnitAccount() *api.BusinessUnitAccountApiService {
+	return c.Client.BusinessUnitAccountApi
+}
+
+func (c *SDKClient) BusinessUnitList() *api.BusinessUnitListApiService {
+	return c.Client.BusinessUnitListApi
+}
+
 func (c *SDKClient) Categories() *api.CategoriesApiService {
 	return c.Client.CategoriesApi
 }
@@ -165,12 +185,24 @@ func (c *SDKClient) CommentList() *api.CommentListApiService {
 	return c.Client.CommentListApi
 }
 
+func (c *SDKClient) ComponentDepends() *api.ComponentDependsApiService {
+	return c.Client.ComponentDependsApi
+}
+
+func (c *SDKClient) ComponentDetail() *api.ComponentDetailApiService {
+	return c.Client.ComponentDetailApi
+}
+
 func (c *SDKClient) ComponentElementUrgeReview() *api.ComponentElementUrgeReviewApiService {
 	return c.Client.ComponentElementUrgeReviewApi
 }
 
 func (c *SDKClient) ComponentReviewResults() *api.ComponentReviewResultsApiService {
 	return c.Client.ComponentReviewResultsApi
+}
+
+func (c *SDKClient) ComponentSharing() *api.ComponentSharingApiService {
+	return c.Client.ComponentSharingApi
 }
 
 func (c *SDKClient) Components() *api.ComponentsApiService {
@@ -195,6 +227,10 @@ func (c *SDKClient) ConversionLinks() *api.ConversionLinksApiService {
 
 func (c *SDKClient) Conversions() *api.ConversionsApiService {
 	return c.Client.ConversionsApi
+}
+
+func (c *SDKClient) CreativeRecommend() *api.CreativeRecommendApiService {
+	return c.Client.CreativeRecommendApi
 }
 
 func (c *SDKClient) CreativeTemplate() *api.CreativeTemplateApiService {
@@ -253,6 +289,10 @@ func (c *SDKClient) DynamicAdVideoTemplates() *api.DynamicAdVideoTemplatesApiSer
 	return c.Client.DynamicAdVideoTemplatesApi
 }
 
+func (c *SDKClient) DynamicCreativePreviews() *api.DynamicCreativePreviewsApiService {
+	return c.Client.DynamicCreativePreviewsApi
+}
+
 func (c *SDKClient) DynamicCreativeReviewResults() *api.DynamicCreativeReviewResultsApiService {
 	return c.Client.DynamicCreativeReviewResultsApi
 }
@@ -305,12 +345,20 @@ func (c *SDKClient) GameFeatureTags() *api.GameFeatureTagsApiService {
 	return c.Client.GameFeatureTagsApi
 }
 
+func (c *SDKClient) GameFeatureV6() *api.GameFeatureV6ApiService {
+	return c.Client.GameFeatureV6Api
+}
+
 func (c *SDKClient) GetWxGameAppGiftPack() *api.GetWxGameAppGiftPackApiService {
 	return c.Client.GetWxGameAppGiftPackApi
 }
 
 func (c *SDKClient) HourlyReports() *api.HourlyReportsApiService {
 	return c.Client.HourlyReportsApi
+}
+
+func (c *SDKClient) IllegalComplaint() *api.IllegalComplaintApiService {
+	return c.Client.IllegalComplaintApi
 }
 
 func (c *SDKClient) ImageProcessing() *api.ImageProcessingApiService {
@@ -441,6 +489,10 @@ func (c *SDKClient) MarketingTargetTypes() *api.MarketingTargetTypesApiService {
 	return c.Client.MarketingTargetTypesApi
 }
 
+func (c *SDKClient) MaterialAsyncTasks() *api.MaterialAsyncTasksApiService {
+	return c.Client.MaterialAsyncTasksApi
+}
+
 func (c *SDKClient) MaterialDcaset() *api.MaterialDcasetApiService {
 	return c.Client.MaterialDcasetApi
 }
@@ -481,12 +533,44 @@ func (c *SDKClient) MuseAiUgc() *api.MuseAiUgcApiService {
 	return c.Client.MuseAiUgcApi
 }
 
+func (c *SDKClient) MuseAudios() *api.MuseAudiosApiService {
+	return c.Client.MuseAudiosApi
+}
+
+func (c *SDKClient) Negativewords() *api.NegativewordsApiService {
+	return c.Client.NegativewordsApi
+}
+
 func (c *SDKClient) Oauth() *api.OauthApiService {
 	return c.Client.OauthApi
 }
 
 func (c *SDKClient) ObjectCommentFlag() *api.ObjectCommentFlagApiService {
 	return c.Client.ObjectCommentFlagApi
+}
+
+func (c *SDKClient) OfficialLandingPage() *api.OfficialLandingPageApiService {
+	return c.Client.OfficialLandingPageApi
+}
+
+func (c *SDKClient) OfficialLandingPageComponent() *api.OfficialLandingPageComponentApiService {
+	return c.Client.OfficialLandingPageComponentApi
+}
+
+func (c *SDKClient) OfficialLandingPageDetail() *api.OfficialLandingPageDetailApiService {
+	return c.Client.OfficialLandingPageDetailApi
+}
+
+func (c *SDKClient) OfficialLandingPageList() *api.OfficialLandingPageListApiService {
+	return c.Client.OfficialLandingPageListApi
+}
+
+func (c *SDKClient) OfficialLandingPageSubmit() *api.OfficialLandingPageSubmitApiService {
+	return c.Client.OfficialLandingPageSubmitApi
+}
+
+func (c *SDKClient) OnlinePreviewQrcode() *api.OnlinePreviewQrcodeApiService {
+	return c.Client.OnlinePreviewQrcodeApi
 }
 
 func (c *SDKClient) OperationLogList() *api.OperationLogListApiService {
@@ -541,12 +625,40 @@ func (c *SDKClient) Programmed() *api.ProgrammedApiService {
 	return c.Client.ProgrammedApi
 }
 
+func (c *SDKClient) ProgrammedCommponentPreview() *api.ProgrammedCommponentPreviewApiService {
+	return c.Client.ProgrammedCommponentPreviewApi
+}
+
+func (c *SDKClient) ProgrammedCommponentPreviewTemplate() *api.ProgrammedCommponentPreviewTemplateApiService {
+	return c.Client.ProgrammedCommponentPreviewTemplateApi
+}
+
+func (c *SDKClient) ProgrammedCommponentResult() *api.ProgrammedCommponentResultApiService {
+	return c.Client.ProgrammedCommponentResultApi
+}
+
 func (c *SDKClient) ProgrammedMaterialMappings() *api.ProgrammedMaterialMappingsApiService {
 	return c.Client.ProgrammedMaterialMappingsApi
 }
 
 func (c *SDKClient) ProgrammedTemplate() *api.ProgrammedTemplateApiService {
 	return c.Client.ProgrammedTemplateApi
+}
+
+func (c *SDKClient) PunishDetail() *api.PunishDetailApiService {
+	return c.Client.PunishDetailApi
+}
+
+func (c *SDKClient) PunishMetrics() *api.PunishMetricsApiService {
+	return c.Client.PunishMetricsApi
+}
+
+func (c *SDKClient) PunishmentConfig() *api.PunishmentConfigApiService {
+	return c.Client.PunishmentConfigApi
+}
+
+func (c *SDKClient) PunishmentQuery() *api.PunishmentQueryApiService {
+	return c.Client.PunishmentQueryApi
 }
 
 func (c *SDKClient) QualificationImages() *api.QualificationImagesApiService {
@@ -597,8 +709,24 @@ func (c *SDKClient) SceneSpecTags() *api.SceneSpecTagsApiService {
 	return c.Client.SceneSpecTagsApi
 }
 
+func (c *SDKClient) SearchAdgroups() *api.SearchAdgroupsApiService {
+	return c.Client.SearchAdgroupsApi
+}
+
+func (c *SDKClient) SearchDynamicCreatives() *api.SearchDynamicCreativesApiService {
+	return c.Client.SearchDynamicCreativesApi
+}
+
 func (c *SDKClient) SubcustomerTransfer() *api.SubcustomerTransferApiService {
 	return c.Client.SubcustomerTransferApi
+}
+
+func (c *SDKClient) SubsidyAccountBind() *api.SubsidyAccountBindApiService {
+	return c.Client.SubsidyAccountBindApi
+}
+
+func (c *SDKClient) SubsidyBoundAccountList() *api.SubsidyBoundAccountListApiService {
+	return c.Client.SubsidyBoundAccountListApi
 }
 
 func (c *SDKClient) TargetingTagReports() *api.TargetingTagReportsApiService {
@@ -633,6 +761,10 @@ func (c *SDKClient) UserActions() *api.UserActionsApiService {
 	return c.Client.UserActionsApi
 }
 
+func (c *SDKClient) UserOrganizationAuthentication() *api.UserOrganizationAuthenticationApiService {
+	return c.Client.UserOrganizationAuthenticationApi
+}
+
 func (c *SDKClient) VideoChannelDealerData() *api.VideoChannelDealerDataApiService {
 	return c.Client.VideoChannelDealerDataApi
 }
@@ -655,6 +787,38 @@ func (c *SDKClient) Videos() *api.VideosApiService {
 
 func (c *SDKClient) Wallet() *api.WalletApiService {
 	return c.Client.WalletApi
+}
+
+func (c *SDKClient) WalletBasicInfo() *api.WalletBasicInfoApiService {
+	return c.Client.WalletBasicInfoApi
+}
+
+func (c *SDKClient) WalletBindAdvertiser() *api.WalletBindAdvertiserApiService {
+	return c.Client.WalletBindAdvertiserApi
+}
+
+func (c *SDKClient) WalletCreate() *api.WalletCreateApiService {
+	return c.Client.WalletCreateApi
+}
+
+func (c *SDKClient) WalletEdit() *api.WalletEditApiService {
+	return c.Client.WalletEditApi
+}
+
+func (c *SDKClient) WalletGetBindingAdvertiser() *api.WalletGetBindingAdvertiserApiService {
+	return c.Client.WalletGetBindingAdvertiserApi
+}
+
+func (c *SDKClient) WalletInvoice() *api.WalletInvoiceApiService {
+	return c.Client.WalletInvoiceApi
+}
+
+func (c *SDKClient) WalletTransfer() *api.WalletTransferApiService {
+	return c.Client.WalletTransferApi
+}
+
+func (c *SDKClient) Watermarks() *api.WatermarksApiService {
+	return c.Client.WatermarksApi
 }
 
 func (c *SDKClient) WechatChannelsAccounts() *api.WechatChannelsAccountsApiService {
@@ -709,20 +873,36 @@ func (c *SDKClient) WechatPagesGrantinfo() *api.WechatPagesGrantinfoApiService {
 	return c.Client.WechatPagesGrantinfoApi
 }
 
+func (c *SDKClient) WechatShop() *api.WechatShopApiService {
+	return c.Client.WechatShopApi
+}
+
+func (c *SDKClient) WechatShopAuthorization() *api.WechatShopAuthorizationApiService {
+	return c.Client.WechatShopAuthorizationApi
+}
+
+func (c *SDKClient) WechatShopAuthorizationStatus() *api.WechatShopAuthorizationStatusApiService {
+	return c.Client.WechatShopAuthorizationStatusApi
+}
+
+func (c *SDKClient) WechatShopAuthorizationValidation() *api.WechatShopAuthorizationValidationApiService {
+	return c.Client.WechatShopAuthorizationValidationApi
+}
+
+func (c *SDKClient) WechatStoreCatalogs() *api.WechatStoreCatalogsApiService {
+	return c.Client.WechatStoreCatalogsApi
+}
+
+func (c *SDKClient) WechatStoreProductItems() *api.WechatStoreProductItemsApiService {
+	return c.Client.WechatStoreProductItemsApi
+}
+
 func (c *SDKClient) Wildcards() *api.WildcardsApiService {
 	return c.Client.WildcardsApi
 }
 
 func (c *SDKClient) WxGamePlayablePage() *api.WxGamePlayablePageApiService {
 	return c.Client.WxGamePlayablePageApi
-}
-
-func (c *SDKClient) WxPackageAccount() *api.WxPackageAccountApiService {
-	return c.Client.WxPackageAccountApi
-}
-
-func (c *SDKClient) WxPackagePackage() *api.WxPackagePackageApiService {
-	return c.Client.WxPackagePackageApi
 }
 
 func (c *SDKClient) XijingComplexTemplate() *api.XijingComplexTemplateApiService {
