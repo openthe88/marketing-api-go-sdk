@@ -26,4 +26,7 @@ const (
 	TaskScope_COMMENT          TaskScope = "TASK_SCOPE_COMMENT"
 	TaskScope_DYNAMIC_CREATIVE TaskScope = "TASK_SCOPE_DYNAMIC_CREATIVE"
 	TaskScope_ADEXPORT         TaskScope = "TASK_SCOPE_ADEXPORT"
+	TaskScope_COMPONENT        TaskScope = "TASK_SCOPE_COMPONENT"
+	TaskScope_IMAGE            TaskScope = "TASK_SCOPE_IMAGE"
+	TaskScope_VIDEO            TaskScope = "TASK_SCOPE_VIDEO"
 )

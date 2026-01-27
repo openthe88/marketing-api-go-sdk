@@ -775,4 +775,8 @@ type HourlyReportsGetListStruct struct {
 	PoiId                                      *string  `json:"poi_id,omitempty"`
 	ProjectId                                  *int64   `json:"project_id,omitempty"`
 	ProjectName                                *string  `json:"project_name,omitempty"`
+	PurchasePv                                 *int64   `json:"purchase_pv,omitempty"`
+	RegPv                                      *int64   `json:"reg_pv,omitempty"`
+	OrderPv                                    *int64   `json:"order_pv,omitempty"`
+	OrderUv                                    *int64   `json:"order_uv,omitempty"`
 }

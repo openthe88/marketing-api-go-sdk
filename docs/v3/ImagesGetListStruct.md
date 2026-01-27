@@ -20,8 +20,9 @@ Name | Type | Description | Notes
 **ProductOuterId** | **string** |  | [optional] [default to null]
 **SourceReferenceId** | **string** |  | [optional] [default to null]
 **OwnerAccountId** | **string** |  | [optional] [default to null]
-**Status** | [***MediaStatusType**](MediaStatusType.md) |  | [optional] [default to null]
+**Status** | [***AdStatus**](AdStatus.md) |  | [optional] [default to null]
 **SampleAspectRatio** | **string** |  | [optional] [default to null]
+**SimilarityStatus** | [***SimilarityStatus**](SimilarityStatus.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

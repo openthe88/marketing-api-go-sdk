@@ -37,7 +37,7 @@ Name | Type | Description  | Notes
 
  **bidMode** | **optional.String**|  | 
  **marketingCarrierDetail** | [**optional.Interface of MarketingCarrierDetail**](MarketingCarrierDetail.md)|  | 
- **conversionLinkAssetId** | **optional.Int64**|  | 
+ **deliveryScene** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

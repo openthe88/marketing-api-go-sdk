@@ -33,8 +33,11 @@ Name | Type | Description | Notes
 **AppPromotionVideo** | [***AppPromotionVideoComponent**](app_promotion_video_component.md) |  | [optional] [default to null]
 **VideoShowcase** | [***VideoShowcaseComponent**](video_showcase_component.md) |  | [optional] [default to null]
 **ImageShowcase** | [***ImageShowcaseComponent**](image_showcase_component.md) |  | [optional] [default to null]
+**SocialSkill** | [***SocialSkillComponent**](social_skill_component.md) |  | [optional] [default to null]
 **MiniCardLink** | [***MiniCardLinkComponent**](mini_card_link_component.md) |  | [optional] [default to null]
 **FloatingZoneList** | [***FloatingZoneListComponent**](floating_zone_list_component.md) |  | [optional] [default to null]
+**VideoChannelsContent** | [***VideoChannelsContentComponent**](video_channels_content_component.md) |  | [optional] [default to null]
+**WxgameDirectPage** | [***WxgameDirectPageComponent**](wxgame_direct_page_component.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

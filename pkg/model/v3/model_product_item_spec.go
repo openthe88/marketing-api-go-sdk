@@ -145,6 +145,10 @@ type ProductItemSpec struct {
 	DownloadCount                *int64                 `json:"download_count,omitempty"`
 	PayingReaderCount            *int64                 `json:"paying_reader_count,omitempty"`
 	StorySchool                  *string                `json:"story_school,omitempty"`
+	ActorList                    *string                `json:"actor_list,omitempty"`
+	CharacterList                *string                `json:"character_list,omitempty"`
+	EpisodeCount                 *int64                 `json:"episode_count,omitempty"`
+	StoryTheme                   *string                `json:"story_theme,omitempty"`
 	StoryRoleIdentity            *string                `json:"story_role_identity,omitempty"`
 	StoryRoleImage               *string                `json:"story_role_image,omitempty"`
 	StoryEra                     *string                `json:"story_era,omitempty"`
@@ -168,4 +172,5 @@ type ProductItemSpec struct {
 	BusinessPrice                BusinessPrice          `json:"business_price,omitempty"`
 	InitialTotalInvestment       InitialTotalInvestment `json:"initial_total_investment,omitempty"`
 	BusinessAudience             BusinessAudience       `json:"business_audience,omitempty"`
+	ServiceTag                   *[]string              `json:"service_tag,omitempty"`
 }

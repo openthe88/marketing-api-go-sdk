@@ -11,7 +11,9 @@ package model
 
 // 落地页内容结构定义
 type JumpinfoStruct struct {
-	PageType PageType                 `json:"page_type,omitempty"`
-	PageSpec *PageSpec                `json:"page_spec,omitempty"`
-	Backups  *[]BackupsJumpinfoStruct `json:"backups,omitempty"`
+	PageType          PageType                 `json:"page_type,omitempty"`
+	PageSpec          *PageSpec                `json:"page_spec,omitempty"`
+	Backups           *[]BackupsJumpinfoStruct `json:"backups,omitempty"`
+	JumpinfoAccountId *int64                   `json:"jumpinfo_account_id,omitempty"`
+	PlatformType      LandingPagePlatformType  `json:"platform_type,omitempty"`
 }

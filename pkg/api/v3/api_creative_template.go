@@ -30,7 +30,7 @@ var (
 type CreativeTemplateApiService service
 
 /*
-CreativeTemplateApiService 获取创意规格详情
+CreativeTemplateApiService 获取创意形式详情
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param marketingGoal
@@ -43,20 +43,22 @@ CreativeTemplateApiService 获取创意规格详情
      * @param "SiteSet" (optional.Interface of []string) -
      * @param "DynamicCreativeType" (optional.String) -
      * @param "CreativeTemplateId" (optional.Int64) -
-     * @param "ConversionLinkAssetId" (optional.Int64) -
+     * @param "UseNewVersion" (optional.Bool) -
+     * @param "AdgroupType" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return CreativeTemplateGetResponse
 */
 
 type CreativeTemplateGetOpts struct {
-	MarketingSubGoal      optional.String
-	AutomaticSiteEnabled  optional.Bool
-	SiteSet               optional.Interface
-	DynamicCreativeType   optional.String
-	CreativeTemplateId    optional.Int64
-	ConversionLinkAssetId optional.Int64
-	Fields                optional.Interface
+	MarketingSubGoal     optional.String
+	AutomaticSiteEnabled optional.Bool
+	SiteSet              optional.Interface
+	DynamicCreativeType  optional.String
+	CreativeTemplateId   optional.Int64
+	UseNewVersion        optional.Bool
+	AdgroupType          optional.String
+	Fields               optional.Interface
 }
 
 func (a *CreativeTemplateApiService) Get(ctx context.Context, accountId int64, marketingGoal string, marketingTargetType string, marketingCarrierType string, deliveryMode string, localVarOptionals *CreativeTemplateGetOpts) (CreativeTemplateGetResponseData, http.Header, error) {
@@ -97,8 +99,11 @@ func (a *CreativeTemplateApiService) Get(ctx context.Context, accountId int64, m
 	if localVarOptionals != nil && localVarOptionals.CreativeTemplateId.IsSet() {
 		localVarQueryParams.Add("creative_template_id", parameterToString(localVarOptionals.CreativeTemplateId.Value(), ""))
 	}
-	if localVarOptionals != nil && localVarOptionals.ConversionLinkAssetId.IsSet() {
-		localVarQueryParams.Add("conversion_link_asset_id", parameterToString(localVarOptionals.ConversionLinkAssetId.Value(), ""))
+	if localVarOptionals != nil && localVarOptionals.UseNewVersion.IsSet() {
+		localVarQueryParams.Add("use_new_version", parameterToString(localVarOptionals.UseNewVersion.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.AdgroupType.IsSet() {
+		localVarQueryParams.Add("adgroup_type", parameterToString(localVarOptionals.AdgroupType.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

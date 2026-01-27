@@ -26,4 +26,9 @@ type RedEnvelopeStruct struct {
 	PlotSignImage                 *string               `json:"plot_sign_image,omitempty"`
 	PlotBrandLogo                 *string               `json:"plot_brand_logo,omitempty"`
 	PlotOriginalMaterial          *PlotOriginalMaterial `json:"plot_original_material,omitempty"`
+	RedEnvelopeBrandName          *string               `json:"red_envelope_brand_name,omitempty"`
+	GiftStoryProductDesc          *string               `json:"gift_story_product_desc,omitempty"`
+	GiftStoryProductName          *string               `json:"gift_story_product_name,omitempty"`
+	GiftStoryButtonText           *string               `json:"gift_story_button_text,omitempty"`
+	PlotButtonJumpInfo            *LandingPageStructure `json:"plot_button_jump_info,omitempty"`
 }

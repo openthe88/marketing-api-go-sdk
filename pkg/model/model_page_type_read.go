@@ -68,5 +68,8 @@ const (
 	PageTypeRead_SEARCH_BRAND_AREA               PageTypeRead = "PAGE_TYPE_SEARCH_BRAND_AREA"
 	PageTypeRead_WECHAT_CHANNELS_PROFILE         PageTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_PROFILE"
 	PageTypeRead_WECHAT_CHANNELS_SHOP_PRODUCT    PageTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT"
+	PageTypeRead_WECHAT_QUERY_PAGE               PageTypeRead = "PAGE_TYPE_WECHAT_QUERY_PAGE"
+	PageTypeRead_WECHAT_SHOP                     PageTypeRead = "PAGE_TYPE_WECHAT_SHOP"
 	PageTypeRead_TSA_OTT                         PageTypeRead = "PAGE_TYPE_TSA_OTT"
+	PageTypeRead_APP_HARMONY                     PageTypeRead = "PAGE_TYPE_APP_HARMONY"
 )

@@ -137,6 +137,10 @@ Name | Type | Description | Notes
 **DownloadCount** | **int64** |  | [optional] [default to null]
 **PayingReaderCount** | **int64** |  | [optional] [default to null]
 **StorySchool** | **string** |  | [optional] [default to null]
+**ActorList** | **string** |  | [optional] [default to null]
+**CharacterList** | **string** |  | [optional] [default to null]
+**EpisodeCount** | **int64** |  | [optional] [default to null]
+**StoryTheme** | **string** |  | [optional] [default to null]
 **StoryRoleIdentity** | **string** |  | [optional] [default to null]
 **StoryRoleImage** | **string** |  | [optional] [default to null]
 **StoryEra** | **string** |  | [optional] [default to null]
@@ -160,6 +164,7 @@ Name | Type | Description | Notes
 **BusinessPrice** | [***BusinessPrice**](BusinessPrice.md) |  | [optional] [default to null]
 **InitialTotalInvestment** | [***InitialTotalInvestment**](InitialTotalInvestment.md) |  | [optional] [default to null]
 **BusinessAudience** | [***BusinessAudience**](BusinessAudience.md) |  | [optional] [default to null]
+**ServiceTag** | **[]string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -9,8 +9,9 @@
 
 package model
 
-// 轮播组件
+// 多卡轮播组件
 type FloatingZoneListComponent struct {
 	ComponentId *int64                  `json:"component_id,omitempty"`
 	Value       *FloatingZoneListStruct `json:"value,omitempty"`
+	IsDeleted   *bool                   `json:"is_deleted,omitempty"`
 }
