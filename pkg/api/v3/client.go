@@ -68,6 +68,8 @@ type APIClient struct {
 
 	AdvertiserApi *AdvertiserApiService
 
+	AdvertiserConfigApi *AdvertiserConfigApiService
+
 	AdvertiserDailyBudgetApi *AdvertiserDailyBudgetApiService
 
 	AgencyApi *AgencyApiService
@@ -285,6 +287,8 @@ type APIClient struct {
 	MarketingTargetAssetsApi *MarketingTargetAssetsApiService
 
 	MarketingTargetTypesApi *MarketingTargetTypesApiService
+
+	MaterialAiAnnotationApi *MaterialAiAnnotationApiService
 
 	MaterialAsyncTasksApi *MaterialAsyncTasksApiService
 
@@ -537,6 +541,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AdgroupNegativewordsApi = (*AdgroupNegativewordsApiService)(&c.common)
 	c.AdgroupsApi = (*AdgroupsApiService)(&c.common)
 	c.AdvertiserApi = (*AdvertiserApiService)(&c.common)
+	c.AdvertiserConfigApi = (*AdvertiserConfigApiService)(&c.common)
 	c.AdvertiserDailyBudgetApi = (*AdvertiserDailyBudgetApiService)(&c.common)
 	c.AgencyApi = (*AgencyApiService)(&c.common)
 	c.AgencyBusinessUnitApi = (*AgencyBusinessUnitApiService)(&c.common)
@@ -646,6 +651,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MarketingTargetAssetPropertyValuesApi = (*MarketingTargetAssetPropertyValuesApiService)(&c.common)
 	c.MarketingTargetAssetsApi = (*MarketingTargetAssetsApiService)(&c.common)
 	c.MarketingTargetTypesApi = (*MarketingTargetTypesApiService)(&c.common)
+	c.MaterialAiAnnotationApi = (*MaterialAiAnnotationApiService)(&c.common)
 	c.MaterialAsyncTasksApi = (*MaterialAsyncTasksApiService)(&c.common)
 	c.MaterialDcasetApi = (*MaterialDcasetApiService)(&c.common)
 	c.MaterialDcatagApi = (*MaterialDcatagApiService)(&c.common)

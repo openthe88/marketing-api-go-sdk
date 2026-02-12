@@ -25,4 +25,5 @@ const (
 	AdCreativeSource_HISTORY_COMP_REUSE                   AdCreativeSource = "AD_CREATIVE_HISTORY_COMP_REUSE"
 	AdCreativeSource_NEW_RECOMMEND                        AdCreativeSource = "AD_CREATIVE_NEW_RECOMMEND"
 	AdCreativeSource_TRANSFORMER_RESIZE                   AdCreativeSource = "AD_CREATIVE_TRANSFORMER_RESIZE"
+	AdCreativeSource_AI_FLAG_EXPERIMENT                   AdCreativeSource = "AD_CREATIVE_AI_FLAG_EXPERIMENT"
 )

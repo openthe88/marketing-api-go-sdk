@@ -74,4 +74,5 @@ type AdgroupsAddRequest struct {
 	AdxRealtimeType                   AdxRealtimeType                `json:"adx_realtime_type,omitempty"`
 	EnableSteadyExploration           *bool                          `json:"enable_steady_exploration,omitempty"`
 	SmartTargetingMode                SmartTargetingMode             `json:"smart_targeting_mode,omitempty"`
+	SmartCouponMode                   SmartCouponMode                `json:"smart_coupon_mode,omitempty"`
 }

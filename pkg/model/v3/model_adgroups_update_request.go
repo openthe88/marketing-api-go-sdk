@@ -50,4 +50,5 @@ type AdgroupsUpdateRequest struct {
 	LiveRecommendStrategyEnabled      *bool                          `json:"live_recommend_strategy_enabled,omitempty"`
 	CustomCostRoiCap                  *float64                       `json:"custom_cost_roi_cap,omitempty"`
 	SmartTargetingMode                SmartTargetingMode             `json:"smart_targeting_mode,omitempty"`
+	SmartCouponMode                   SmartCouponMode                `json:"smart_coupon_mode,omitempty"`
 }

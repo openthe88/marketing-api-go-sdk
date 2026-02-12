@@ -836,6 +836,7 @@ Name | Type | Description | Notes
 **ClkBmDetailPv** | **int64** |  | [optional] [default to null]
 **ClkRpsPv** | **int64** |  | [optional] [default to null]
 **SliderPv** | **int64** |  | [optional] [default to null]
+**InsuranceDedupPv** | **int64** |  | [optional] [default to null]
 **AgeId** | **int64** |  | [optional] [default to null]
 **CityId** | **int64** |  | [optional] [default to null]
 **RegionId** | **int64** |  | [optional] [default to null]

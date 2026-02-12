@@ -53,6 +53,10 @@ func (c *SDKClient) Advertiser() *api.AdvertiserApiService {
 	return c.Client.AdvertiserApi
 }
 
+func (c *SDKClient) AdvertiserConfig() *api.AdvertiserConfigApiService {
+	return c.Client.AdvertiserConfigApi
+}
+
 func (c *SDKClient) AdvertiserDailyBudget() *api.AdvertiserDailyBudgetApiService {
 	return c.Client.AdvertiserDailyBudgetApi
 }
@@ -487,6 +491,10 @@ func (c *SDKClient) MarketingTargetAssets() *api.MarketingTargetAssetsApiService
 
 func (c *SDKClient) MarketingTargetTypes() *api.MarketingTargetTypesApiService {
 	return c.Client.MarketingTargetTypesApi
+}
+
+func (c *SDKClient) MaterialAiAnnotation() *api.MaterialAiAnnotationApiService {
+	return c.Client.MaterialAiAnnotationApi
 }
 
 func (c *SDKClient) MaterialAsyncTasks() *api.MaterialAsyncTasksApiService {
